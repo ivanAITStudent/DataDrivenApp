@@ -11,4 +11,8 @@ public partial class Login_Page : System.Web.UI.Page
     {
 
     }
+
+    protected void takeSurvey_btn_Click(object sender, EventArgs e)
+    {
+    }
 }

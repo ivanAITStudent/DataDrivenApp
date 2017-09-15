@@ -11,6 +11,8 @@
     <div>
         <header>
 
+            <asp:Label ID="header_lbl" runat="server" Text="HEADER TEXT"></asp:Label>
+
         </header>
         <section>
             <div>

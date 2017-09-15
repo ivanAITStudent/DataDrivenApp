@@ -18,7 +18,7 @@
             </div>
             <div>
 
-                <asp:Button ID="takeSurvey_btn" runat="server" Text="Take A Survey" />
+                <asp:Button ID="takeSurvey_btn" runat="server" Text="Take A Survey" PostBackUrl="~/SurveyList.aspx" OnClick="takeSurvey_btn_Click" />
                 <br />
                 <asp:Button ID="login_btn" runat="server" Text="Login" Width="267px" />
 

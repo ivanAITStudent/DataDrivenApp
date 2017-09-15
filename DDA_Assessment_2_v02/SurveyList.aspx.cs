@@ -16,18 +16,16 @@ public partial class SurveyList : System.Web.UI.Page
 
         //get selected
 
-        Button but1 = new Button();
-        Button but2 = new Button();
-        but1.Text = "button 1";
-        but2.Text = "button 2";
-        but1.Click += new EventHandler();
+        SurveyList_Button but1 = new SurveyList_Button("123");
+        but1.Click += new EventHandler(buttonClick);
+        but1.Text = "Button name";
         tableOfSurveys.Controls.Add(but1);
-        tableOfSurveys.Controls.Add(but2);
+        tableOfSurveys.Controls.Add(but1);
 
     }
 
-    private void But1_Click(object sender, EventArgs e)
+    private void buttonClick(object sender, EventArgs e)
     {
-        throw new NotImplementedException();
+        ((Button)sender).Text = "Changed";
     }
 }
