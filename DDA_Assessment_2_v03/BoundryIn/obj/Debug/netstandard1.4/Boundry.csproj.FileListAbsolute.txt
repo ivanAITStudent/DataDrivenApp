@@ -1,0 +1,7 @@
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\BoundryIn\bin\Debug\netstandard1.4\Boundry.deps.json
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\BoundryIn\bin\Debug\netstandard1.4\Boundry.dll
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\BoundryIn\bin\Debug\netstandard1.4\Boundry.pdb
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\BoundryIn\obj\Debug\netstandard1.4\Boundry.csprojResolveAssemblyReference.cache
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\BoundryIn\obj\Debug\netstandard1.4\Boundry.AssemblyInfo.cs
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\BoundryIn\obj\Debug\netstandard1.4\Boundry.dll
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\BoundryIn\obj\Debug\netstandard1.4\Boundry.pdb

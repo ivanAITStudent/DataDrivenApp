@@ -1,0 +1,6 @@
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\Entity_Query\bin\Debug\netstandard1.4\Entity.deps.json
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\Entity_Query\bin\Debug\netstandard1.4\Entity.dll
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\Entity_Query\bin\Debug\netstandard1.4\Entity.pdb
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\Entity_Query\obj\Debug\netstandard1.4\Entity.AssemblyInfo.cs
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\Entity_Query\obj\Debug\netstandard1.4\Entity.dll
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\Entity_Query\obj\Debug\netstandard1.4\Entity.pdb

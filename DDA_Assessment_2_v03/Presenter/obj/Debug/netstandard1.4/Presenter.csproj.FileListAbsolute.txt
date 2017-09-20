@@ -1,0 +1,7 @@
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\Presenter\bin\Debug\netstandard1.4\Presenter.deps.json
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\Presenter\bin\Debug\netstandard1.4\Presenter.dll
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\Presenter\bin\Debug\netstandard1.4\Presenter.pdb
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\Presenter\obj\Debug\netstandard1.4\Presenter.csprojResolveAssemblyReference.cache
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\Presenter\obj\Debug\netstandard1.4\Presenter.AssemblyInfo.cs
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\Presenter\obj\Debug\netstandard1.4\Presenter.dll
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\Presenter\obj\Debug\netstandard1.4\Presenter.pdb
