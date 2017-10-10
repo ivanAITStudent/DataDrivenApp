@@ -1,0 +1,7 @@
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\Interactor\bin\Debug\netstandard1.4\Interactor.deps.json
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\Interactor\bin\Debug\netstandard1.4\Interactor.dll
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\Interactor\bin\Debug\netstandard1.4\Interactor.pdb
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\Interactor\obj\Debug\netstandard1.4\Interactor.csprojResolveAssemblyReference.cache
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\Interactor\obj\Debug\netstandard1.4\Interactor.AssemblyInfo.cs
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\Interactor\obj\Debug\netstandard1.4\Interactor.dll
+C:\Users\wacom\Documents\GitSource\DDA_Assessment_2_v03\Interactor\obj\Debug\netstandard1.4\Interactor.pdb

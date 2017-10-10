@@ -3708,9 +3708,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wacom\\Documents\\GitSource\\DDA_Assessment_2_v03\\Entity_Query\\Entity_Query.csproj",
-      "projectName": "Entity_Query",
-      "projectPath": "C:\\Users\\wacom\\Documents\\GitSource\\DDA_Assessment_2_v03\\Entity_Query\\Entity_Query.csproj",
+      "projectUniqueName": "C:\\Users\\wacom\\Documents\\GitSource\\DDA_Assessment_2_v03\\Entity_Query\\Entity.csproj",
+      "projectName": "Entity",
+      "projectPath": "C:\\Users\\wacom\\Documents\\GitSource\\DDA_Assessment_2_v03\\Entity_Query\\Entity.csproj",
       "outputPath": "C:\\Users\\wacom\\Documents\\GitSource\\DDA_Assessment_2_v03\\Entity_Query\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
