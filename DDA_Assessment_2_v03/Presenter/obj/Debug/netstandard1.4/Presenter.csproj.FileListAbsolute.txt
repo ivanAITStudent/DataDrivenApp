@@ -1,0 +1,13 @@
+C:\Users\Dada\Source\Repos\DataDrivenApp\DDA_Assessment_2_v03\Presenter\bin\Debug\netstandard1.4\Presenter.deps.json
+C:\Users\Dada\Source\Repos\DataDrivenApp\DDA_Assessment_2_v03\Presenter\bin\Debug\netstandard1.4\Presenter.dll
+C:\Users\Dada\Source\Repos\DataDrivenApp\DDA_Assessment_2_v03\Presenter\bin\Debug\netstandard1.4\Presenter.pdb
+C:\Users\Dada\Source\Repos\DataDrivenApp\DDA_Assessment_2_v03\Presenter\bin\Debug\netstandard1.4\Boundry.dll
+C:\Users\Dada\Source\Repos\DataDrivenApp\DDA_Assessment_2_v03\Presenter\bin\Debug\netstandard1.4\Entity_Query.dll
+C:\Users\Dada\Source\Repos\DataDrivenApp\DDA_Assessment_2_v03\Presenter\bin\Debug\netstandard1.4\Interactors.dll
+C:\Users\Dada\Source\Repos\DataDrivenApp\DDA_Assessment_2_v03\Presenter\bin\Debug\netstandard1.4\Boundry.pdb
+C:\Users\Dada\Source\Repos\DataDrivenApp\DDA_Assessment_2_v03\Presenter\bin\Debug\netstandard1.4\Entity_Query.pdb
+C:\Users\Dada\Source\Repos\DataDrivenApp\DDA_Assessment_2_v03\Presenter\bin\Debug\netstandard1.4\Interactors.pdb
+C:\Users\Dada\Source\Repos\DataDrivenApp\DDA_Assessment_2_v03\Presenter\obj\Debug\netstandard1.4\Presenter.csprojResolveAssemblyReference.cache
+C:\Users\Dada\Source\Repos\DataDrivenApp\DDA_Assessment_2_v03\Presenter\obj\Debug\netstandard1.4\Presenter.AssemblyInfo.cs
+C:\Users\Dada\Source\Repos\DataDrivenApp\DDA_Assessment_2_v03\Presenter\obj\Debug\netstandard1.4\Presenter.dll
+C:\Users\Dada\Source\Repos\DataDrivenApp\DDA_Assessment_2_v03\Presenter\obj\Debug\netstandard1.4\Presenter.pdb

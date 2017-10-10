@@ -1,0 +1,9 @@
+C:\Users\Dada\Source\Repos\DataDrivenApp\DDA_Assessment_2_v03\Interactor\bin\Debug\netstandard1.4\Interactors.deps.json
+C:\Users\Dada\Source\Repos\DataDrivenApp\DDA_Assessment_2_v03\Interactor\bin\Debug\netstandard1.4\Interactors.dll
+C:\Users\Dada\Source\Repos\DataDrivenApp\DDA_Assessment_2_v03\Interactor\bin\Debug\netstandard1.4\Interactors.pdb
+C:\Users\Dada\Source\Repos\DataDrivenApp\DDA_Assessment_2_v03\Interactor\bin\Debug\netstandard1.4\Entity_Query.dll
+C:\Users\Dada\Source\Repos\DataDrivenApp\DDA_Assessment_2_v03\Interactor\bin\Debug\netstandard1.4\Entity_Query.pdb
+C:\Users\Dada\Source\Repos\DataDrivenApp\DDA_Assessment_2_v03\Interactor\obj\Debug\netstandard1.4\Interactors.csprojResolveAssemblyReference.cache
+C:\Users\Dada\Source\Repos\DataDrivenApp\DDA_Assessment_2_v03\Interactor\obj\Debug\netstandard1.4\Interactors.AssemblyInfo.cs
+C:\Users\Dada\Source\Repos\DataDrivenApp\DDA_Assessment_2_v03\Interactor\obj\Debug\netstandard1.4\Interactors.dll
+C:\Users\Dada\Source\Repos\DataDrivenApp\DDA_Assessment_2_v03\Interactor\obj\Debug\netstandard1.4\Interactors.pdb
