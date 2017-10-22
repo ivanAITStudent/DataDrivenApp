@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 /// <summary>
 /// Summary description for SessionModel
@@ -9,20 +6,17 @@ using System.Web;
 public class SessionModel
 {
     private string _ipaddress;
-    private DateTime _date;
-    private string respondent_survey_ID;
-    private string respondentID;
-    private string sysUserID;
+    private DateTime _sessionOpenDate;
+    private DateTime _sessionClosedDate;
+    private int respondentID;
+    private int repespondentType;
+    private int sysUserID;
     private string username;
 
     public SessionModel(string ip, DateTime date)
     {
         this._ipaddress = ip;
-        this._date = date;
-        Username = "";
-        RespondentID = "";
-        SysUserID = "";
-        Respondent_Survey_ID = "";
+        this._sessionOpenDate = date;
     }
 
     public string Ipaddress
@@ -34,28 +28,15 @@ public class SessionModel
 
     }
 
-    public DateTime Date
+    public DateTime SessionOpenDate
     {
         get
         {
-            return _date;
+            return _sessionOpenDate;
         }
     }
 
-    public string Respondent_Survey_ID
-    {
-        get
-        {
-            return respondent_survey_ID;
-        }
-
-        set
-        {
-            respondent_survey_ID = value;
-        }
-    }
-
-    public string RespondentID
+    public int RespondentID
     {
         get
         {
@@ -68,7 +49,7 @@ public class SessionModel
         }
     }
 
-    public string SysUserID
+    public int SysUserID
     {
         get
         {
@@ -91,6 +72,32 @@ public class SessionModel
         set
         {
             username = value;
+        }
+    }
+
+    public int RepespondentType
+    {
+        get
+        {
+            return repespondentType;
+        }
+
+        set
+        {
+            repespondentType = value;
+        }
+    }
+
+    public DateTime SessionClosedDate
+    {
+        get
+        {
+            return _sessionClosedDate;
+        }
+
+        set
+        {
+            _sessionClosedDate = value;
         }
     }
 }

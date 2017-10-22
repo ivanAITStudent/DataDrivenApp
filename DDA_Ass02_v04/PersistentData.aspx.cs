@@ -11,7 +11,7 @@ public partial class PersistentData : Page
     //private SurveySet _surveySet;
     //private SurveyModel _surveyModel;
 
-    private ASPStyleSheet _aspStyleSheet;
+    private static ASPStyleSheet _aspStyleSheet;
 
     public ASPStyleSheet AspStyleSheet
     {
@@ -26,7 +26,4 @@ public partial class PersistentData : Page
         }
     }
 
-    protected void Page_Load(object sender, EventArgs e)
-    {
-    }
 }

@@ -42,10 +42,19 @@ public class SessionController
         HttpContext.Current.Session["Username"] = username;
     }
 
+    public static void SetSessionState(string state)
+    {
+        HttpContext.Current.Session["SessionState"] = state;
+    }
+
+    public static void SetCurrentQuestionNumber(int num)
+    {
+        HttpContext.Current.Session["CurrentQuestionNumber"] = num;
+    }
+
     public static string getUsername()
     {
         return (string)HttpContext.Current.Session["Username"];
-        //return HttpContext.Current.Session["UserName"] as string;
     }
 
     public static bool IsLoggedIn()
@@ -61,6 +70,11 @@ public class SessionController
     {
         HttpContext.Current.Session["RespondentTypeID"] = typeID;
         HttpContext.Current.Session["RespondentTypeName"] = typeName;
+    }
+
+    public static string GetSessionState()
+    {
+        return (string)HttpContext.Current.Session["SurveyState"];
     }
 
     public static int GetRespondentTypeID()
@@ -93,5 +107,13 @@ public class SessionController
     {
         HttpContext.Current.Session["CurrentSurveyID"] = _id;
         HttpContext.Current.Session["CurrentSurveyName"] = _name;
+    }
+    public static string GetSurveyID()
+    {
+        return (string)HttpContext.Current.Session["CurrentSurveyID"];
+    }
+    public static string GetSurveyName()
+    {
+        return (string)HttpContext.Current.Session["CurrentSurveyName"];
     }
 }

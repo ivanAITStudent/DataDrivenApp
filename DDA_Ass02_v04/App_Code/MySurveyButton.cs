@@ -11,29 +11,44 @@ using System.Data;
 /// </summary>
 public class MySurveyButton: Button
 {
-    int surveyID;
-    string surveyName;
+    private int surveyID;
+    private string surveyName;
     
     public MySurveyButton(int id, string name)
     {
-        surveyID = id;
-        surveyName = name;
-        this.ID = surveyID.ToString();
-        this.Text = surveyName;
+        SurveyID = id;
+        SurveyName = name;
+        this.ID = SurveyID.ToString();
+        this.Text = SurveyName;
         this.Attributes.Add("class", "btn btn-primary btn-lg myButton");
         this.Attributes.Add("runat", "server");
-        this.Click += new EventHandler(button_Click);
+        //this.Click += new EventHandler(button_Click);
     }
 
-    private void button_Click(object sender, EventArgs e)
+    public int SurveyID
     {
-        //set session survey
-        SessionController.SetCurrentSurvey (((MySurveyButton)sender).surveyID, ((MySurveyButton)sender).surveyName);
-        //debug
-        System.Diagnostics.Debug.WriteLine("Button Info: " + ((MySurveyButton)sender).surveyID + ":" + ((MySurveyButton)sender).surveyName);
+        get
+        {
+            return surveyID;
+        }
 
-        //open survey page
+        set
+        {
+            surveyID = value;
+        }
+    }
 
+    public string SurveyName
+    {
+        get
+        {
+            return surveyName;
+        }
+
+        set
+        {
+            surveyName = value;
+        }
     }
 
     public void changeAttribute(string attribute, string value)

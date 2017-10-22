@@ -12,6 +12,7 @@ public class SharedData : Page
 {
     protected static ASPStyleSheet _aspStyleSheet = new ASPStyleSheet();
     protected ListDictionary listOfModels = new ListDictionary();
+    private static SortedList<int, QuestionResponseModel> listOfQuestionResponseModels = new SortedList<int, QuestionResponseModel>();
 
     public SharedData()
     {
@@ -20,17 +21,22 @@ public class SharedData : Page
         //
     }
 
-    //public ASPStyleSheet AspStyleSheet
-    //{
-    //    get
-    //    {
-    //        return _aspStyleSheet;
-    //    }
+    protected static SortedList<int, QuestionResponseModel> ListOfQuestionResponseModels
+    {
+        get
+        {
+            return listOfQuestionResponseModels;
+        }
 
-    //    set
-    //    {
-    //        _aspStyleSheet = value;
-    //    }
-    //}
+        set
+        {
+            listOfQuestionResponseModels = value;
+        }
+    }
+
+    public static void ResetResponseList()
+    {
+        ListOfQuestionResponseModels.Clear();
+    }
 
 }

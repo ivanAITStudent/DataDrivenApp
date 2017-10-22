@@ -16,7 +16,18 @@ public partial class TakeSurvey : System.Web.UI.Page
         foreach (SurveyModel model in sm)
         {
             MySurveyButton b = new MySurveyButton(model.SurveyID, model.SurveyName);
+            b.Click += new EventHandler(button_Click);
             surveySet_plc.Controls.Add(b);
         }
+    }
+
+    private void button_Click(object sender, EventArgs e)
+    {
+        //save session survey details
+        SessionController.SetCurrentSurvey(((MySurveyButton)sender).SurveyID, ((MySurveyButton)sender).SurveyName);
+
+        //conduct survey
+        //open survey page
+        Response.Redirect("/Survey.aspx");
     }
 }
