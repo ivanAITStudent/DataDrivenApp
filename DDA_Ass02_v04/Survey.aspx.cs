@@ -7,77 +7,134 @@ using System.Web.UI.WebControls;
 
 public partial class Survey : System.Web.UI.Page
 {
+
     protected void Page_Load(object sender, EventArgs e)
     {
-        //if survey is commencing
-        //then 
-        //build survey model (survey id)
-        //commence survey##
-        //else if survey is in progress 
-        //then
-        //build next question
-        //display next question
-        //capture response
-        //store response
-        //else if survey has ended
-        //then 
-        //finalise survey
-        //save all details
-        //show thankyou message
-        //reset all session variables
-        //return to survey menu
+
+        /* ALGORITHM FOR CONDUCTING A SURVEY
+         * 
+         * IF survey is commencing
+         * then 
+         *      build survey model
+         *      update survey state
+         *      get first question
+         *      update question model
+         *      display question model
+         *      capture user response
+         * ELSE IF survey is in progress
+         *      get next question
+         *      update question model
+         *      display question model
+         *       capture user response
+         * ELSE IF survey is concluded
+         *      finalise survey model
+         *      conclude survey
+         * END IF
+         * 
+         * update survey state
+         * redirect user
+         */
 
 
-        //check to see if survey is beginning or in progress or ended
-        if (SessionController.GetSessionState() == null)
-        {
-            //Survey is beginning
 
-            //build survey model
 
-            //update session details
-            SessionController.SetSessionState("In Progress");
-            SessionController.SetCurrentQuestionNumber(1);
 
-            HttpContext.Current.Session["CurrentQuestionID"] = "inProgress";
-            HttpContext.Current.Session["PreviousQuestionID"] = null;
-            HttpContext.Current.Session["NextQuestionID"] = getNextQuestionID(HttpContext.Current.Session["CurrentQuestionID"];
-
-            //commence survey
-        } else if (SessionController.GetSessionState() == "In Progress)
+        // if survey is commencing 
+        if (SessionController.GetSurveyState() == null) // survey is commencing if the survey has no set state 
         {
 
+            //Get Session Variables For Models
+            string sessionIP = SessionController.getIP();
+            DateTime sessionDateTime = SessionController.getDateTime();
+            int surveyID = SessionController.GetSurveyID();
+            string surveyName = SessionController.GetSurveyName();
+            string respondentType = SessionController.GetRespondentType();
+
+            // Build necessary models to pass to the application
+            SessionModel snm;
+            snm = new SessionModel(sessionIP, sessionDateTime);
+            snm.RespondentType = SessionController.GetRespondentType();
+            SurveyModel svm;
+            svm = new SurveyModel(SessionController.GetSurveyID(), SessionController.GetSurveyName());
+
+            if (!respondentType.Equals(SessionController.Anonymous))
+            {
+                // add respondent id, and username to session model
+                snm.RespondentID = SessionController.GetRespondentID();
+                snm.Username = SessionController.GetUsername();
+            } //end if
+
+            //begin survey
+            Boundry_ConductSurvey interactor = new Interactor_ConductSurvey();
+            interactor.BeginSurvey(snm, svm);
+
+            // update survey state
+            SessionController.SetSurveyState("Survey In Progress");
+
+            // get first question id (respondentSurveyModel.SurveyID)
+
+            // updateQuestionModel
         }
-        //Survey in Progress
-        //get survey session details and update page to reflect details
-        //display current question
-        //Check if the survey has just started else set current question
-
-
-        if (HttpContext.Current.Session["questionNumber"] == null)
-        {
-            HttpContext.Current.Session["questionNumber"] = 1;
-
-            //set question to first questin
-            currentQuestion = 1;
-
-            //set current previous and next id
-            previousSurveyQuestionID = -1; // null reference
-
-            List<QuestionResponseModel> surveyQuestionSet = new List<QuestionResponseModel>();
-            surveyQuestionSet = getSurveyQuestionSet();
-            currentHttpContext.Current.Session["surveyQuestion"] = surveyQuestionList[0].;
 
 
 
-        }
-        else
-            currentQuestion = (int)HttpContext.Current.Session["questionNumber"];
+        // UPDATE PAGE
 
-        //display question type with options
+        // Page Components 
+        // Title label
+        headerTitle_lbl.Text = SessionController.GetSurveyName();
+        
+        // Question label
+        questionNumber_lbl.Text = SessionController.GetCurrentQuestionNumber().ToString();
+        // buttons
+        MyQuestionButton left_btn;
+        MyQuestionButton right_btn;
+        MyQuestionButton centre_btn;
 
-        //capture response
+        // setup buttons
+        // set up left button
+        left_btn = new MyQuestionButton(-1, "PREVIOUS", false);
+        //set up right button
+        right_btn = new MyQuestionButton(-1, "NEXT", true);
+        //set centre button
+        centre_btn = new MyQuestionButton(-1, "SUBMIT RESPONSE", true);
 
-        //update question number
-    }
-}
+        // add listeners
+        // upadte listerners links
+        // set question id links
+        //      SessionController.SetCurrentSurveyQuestionID = ;
+        //      SessionController.SetPreviousSurveyQuestionID = ;
+        //      SessionController.SetNextSurveyQuestionID = ;
+
+
+        // add listeners
+        left_btn.Click += new EventHandler(left_btn_Click);
+        right_btn.Click += new EventHandler(right_btn_Click);
+        centre_btn.Click += new EventHandler(centre_btn_Click);
+
+        //add buttons to page
+        surveySet_plc.Controls.Add(left_btn);
+        surveySet_plc.Controls.Add(centre_btn);
+        surveySet_plc.Controls.Add(right_btn);
+
+        // display question text
+
+        // display question options
+
+        //debug
+        debug_lbl.Text = SessionController.GetSurveyState();
+    }//end method
+
+    private void left_btn_Click(object sender, EventArgs e)
+    {
+        // capture response
+
+        // update survey state
+
+        // redirect
+        // example, Response.Redirect("/Survey.aspx");
+        /// string link = getLink(id);
+        /// Response.Redirect(link);
+    }//end method
+
+}//end class

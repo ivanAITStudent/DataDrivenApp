@@ -32,6 +32,9 @@ public class SQLConnector
         //TODO CHECK IF EXCEPTION THROWN
         this.connection.Close();
 
+        //default ConnectionString
+        connectionString = ConfigurationManager.ConnectionStrings["ConnectionString_Ivan"].ConnectionString;
+
         // create a new sql connection
         connection = new SqlConnection();
 

@@ -20,7 +20,7 @@ public partial class _Default : SharedData
 
         // set respondent type to Anonymus
         // this will change if the user logins in
-        SessionController.SetRespondentType(1, "anonymus");
+        SessionController.SetRespondentType(SessionController.Anonymous);
 
         // initialise session data
         _ipaddress = GetIPAddress();

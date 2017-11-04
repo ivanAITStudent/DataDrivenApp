@@ -9,7 +9,7 @@ public class SessionModel
     private DateTime _sessionOpenDate;
     private DateTime _sessionClosedDate;
     private int respondentID;
-    private int repespondentType;
+    private string respondentType;
     private int sysUserID;
     private string username;
 
@@ -75,16 +75,16 @@ public class SessionModel
         }
     }
 
-    public int RepespondentType
+    public string RespondentType
     {
         get
         {
-            return repespondentType;
+            return respondentType;
         }
 
         set
         {
-            repespondentType = value;
+            respondentType = value;
         }
     }
 

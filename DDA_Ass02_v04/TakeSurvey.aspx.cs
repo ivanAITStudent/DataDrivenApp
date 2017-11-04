@@ -26,8 +26,7 @@ public partial class TakeSurvey : System.Web.UI.Page
         //save session survey details
         SessionController.SetCurrentSurvey(((MySurveyButton)sender).SurveyID, ((MySurveyButton)sender).SurveyName);
 
-        //conduct survey
-        //open survey page
+        //open survey page to conduct survey
         Response.Redirect("/Survey.aspx");
     }
 }

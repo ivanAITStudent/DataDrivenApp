@@ -8,8 +8,9 @@ using System.Web;
 /// </summary>
 public interface Boundry_ConductSurvey
 {
-    RespodentSurveyModel BeginSurvey(SessionModel sessionDetails);
+    RespondentSurveyModel BeginSurvey(SessionModel sessionDetails, SurveyModel surveyDetails);
     List<SurveyQuestionModel> BuildSurvey(int surveyID);
-    SurveyQuestionAnswerOption GetNextQuestion(SurveyQuestionModel question);
+    SurveyQuestionAnswerOption BuildQuestion(SurveyQuestionModel question);
     int StoreResponse(ResponseModel response);
+    int ConcludeSurvey(SessionModel sessionDetails, RespondentSurveyModel respondentSurveyDetails); //
 }

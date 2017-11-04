@@ -14,6 +14,12 @@ public class SurveyModel
 
     }
 
+    public SurveyModel(int _id, string _name)
+    {
+        SurveyID = _id;
+        SurveyName = _name;
+    }
+
     public Int32 SurveyID
     {
         get

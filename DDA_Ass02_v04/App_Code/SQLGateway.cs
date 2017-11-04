@@ -9,4 +9,6 @@ using System.Web;
 public interface SQLGateway
 {
     List<SurveyModel> GetListOfRespondentTypeSurveys(int RespondentTypeID);
+    int createAnonymousRespondent(); // returns highest respondentID
+    int createRespondent(int typeID, int sysUerID); // returns respondentID
 }

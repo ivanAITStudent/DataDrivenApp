@@ -1,11 +1,16 @@
-﻿public class RespodentSurveyModel
+﻿public class RespondentSurveyModel
 {
     int respondentSurveyID;
     int respondentID;
     int surveyID;
     bool completed;
 
-    public RespodentSurveyModel(int respondentSurveyID, int respondentID, int surveyID, bool completed)
+    public RespondentSurveyModel()
+    {
+
+    }
+
+    public RespondentSurveyModel(int respondentSurveyID, int respondentID, int surveyID, bool completed)
     {
         this.RespondentSurveyID = respondentSurveyID;
         this.RespondentID = respondentID;
